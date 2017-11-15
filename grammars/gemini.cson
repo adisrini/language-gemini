@@ -1,0 +1,40 @@
+'scopeName': 'source.gemini'
+'name': 'Gemini'
+'fileTypes': ['gm']
+
+'patterns': [
+    {
+        'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+        'name': 'constant.numeric.gemini'
+    },
+    {
+        'match' = '\b(if|then|else)\b'
+        'name' = 'keyword.control.gemini'
+    },
+    {
+        'match': '\\b(function)\\s+(\\w+)\\s*\\(.*\\)'
+        'captures':
+            '1':
+                'name': 'keyword.control.gemini'
+            '2':
+                'name': 'entity.name.function.gemini'
+        'name': 'meta.function.gemini'
+    },
+    {
+        'begin': '\"'
+        'beginCaptures':
+            '0':
+                'name': 'punctuation.definition.string.begin.gemini'
+        'end': '\"'
+        'endCaptures':
+            '0':
+                'name': 'punctuation.definition.string.end.gemini'
+        'name': 'string.quoted.double.gemini'
+        'patterns': [
+            {
+                'match': '\\''
+                'name': 'constant.character.escape.mylanguage'
+            }
+        ]
+    }
+]
