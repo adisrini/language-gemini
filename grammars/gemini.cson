@@ -8,8 +8,8 @@
         'name': 'constant.numeric.gemini'
     },
     {
-        'match' = '\b(if|then|else)\b'
-        'name' = 'keyword.control.gemini'
+        'match': '\b(if|then|else)\b'
+        'name': 'keyword.control.gemini'
     },
     {
         'match': '\\b(function)\\s+(\\w+)\\s*\\(.*\\)'
