@@ -32,8 +32,8 @@
         'name': 'string.quoted.double.gemini'
         'patterns': [
             {
-                'match': '\\''
-                'name': 'constant.character.escape.mylanguage'
+                'match': '\\"'
+                'name': 'constant.character.escape.gemini'
             }
         ]
     }
