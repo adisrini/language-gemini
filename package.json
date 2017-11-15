@@ -1,0 +1,17 @@
+{
+  "name": "language-gemini",
+  "version": "0.0.1",
+  "description": "Gemini language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adisrini/language-gemini.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adisrini/language-gemini/issues"
+  },
+  "license": "MIT"
+}
