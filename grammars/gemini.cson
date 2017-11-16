@@ -21,6 +21,11 @@
         'name': 'meta.function.gemini'
     },
     {
+        'begin': '\\(\\*'
+        'end': '\\*\\)'
+        'name': 'comment.block.gemini'
+    },
+    {
         'begin': '\"'
         'beginCaptures':
             '0':
