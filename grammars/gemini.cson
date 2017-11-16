@@ -11,17 +11,34 @@
         'name': 'constant.numeric.gemini'
     },
     {
-        'match': '\b(if|then|else)\b'
+        'match': '\\b(if|then|else|case|of)\\b'
         'name': 'keyword.control.gemini'
     },
     {
-        'match': '\\b(function)\\s+(\\w+)\\s*\\(.*\\)'
+        'match': '\\b(struct|structure|sig|signature|let|in|end)\\b'
+        'name': 'keyword.other.gemini'
+    },
+    {
+        'match': '\\b(nil|ref)\\b'
+        'name': 'variable.language.gemini'
+    },
+    {
+        'match': '\\b(fun|module)\\s+(\\w+)\\b'
         'captures':
             '1':
                 'name': 'keyword.control.gemini'
             '2':
                 'name': 'entity.name.function.gemini'
         'name': 'meta.function.gemini'
+    },
+    {
+        'match': '\\b(type|datatype)\\s+(\\w+)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.control.gemini'
+            '2':
+                'name': 'entity.name.type.gemini'
+        'name': 'meta.type.gemini'
     },
     {
         'begin': '\"'
